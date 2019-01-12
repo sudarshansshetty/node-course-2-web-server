@@ -48,6 +48,12 @@ app.get('/about',(req,res) =>{
   });
 });
 
+app.get('/project',(req,res) =>{
+  res.render('project.hbs',{
+    pageTitle:'Project Page'
+  });
+});
+
 app.get('/error',(req,res)=>{
   res.send({
     errorMessage :'Unable to fulfill request'
